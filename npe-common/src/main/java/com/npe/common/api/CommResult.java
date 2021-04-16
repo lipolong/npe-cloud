@@ -1,7 +1,6 @@
-package com.npe.demo.entity;
+package com.npe.common.api;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,14 +11,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class CommResult<T> {
 
     private Integer code;
     private String msg;
     private T data;
 
-    public CommResult (Integer code,String msg){
+    public CommResult(Integer code, String msg){
        this(code,msg,null);
     }
 

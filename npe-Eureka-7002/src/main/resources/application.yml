@@ -1,0 +1,17 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: npe-eureka-7002
+
+eureka:
+#  instance:
+#    hostname: Eureka7002.com
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+    service-url:
+      #集群 http://localhost:7001,http://localhost:7002http://localhost:7003
+      defaultZone: http://Eureka7001.com:7001/eureka/
+      #单机：这里如果不写会报错--》是个坑没有提示
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

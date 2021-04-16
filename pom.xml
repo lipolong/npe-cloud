@@ -9,6 +9,11 @@
 
     <modules>
         <module>npe-demo-payment</module>
+        <module>npe-demo-order</module>
+        <module>npe-common</module>
+        <module>npe-Eureka-7001</module>
+        <module>npe-Eureka-7002</module>
+        <module>npe-demo-payment-8002</module>
     </modules>
     <!--  版本管理-->
     <properties>

@@ -1,4 +1,4 @@
-package com.npe.demo;
+package com.npe.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,14 +6,16 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @author lp
- * @date 2021-04-13
+ * @date 2021-04-15
  */
 @SpringBootApplication
 @EnableEurekaClient
-public class DemoApplication {
+public class OrderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class,args);
-        System.out.println("(♥◠‿◠)ﾉﾞ  项目启动成功   ლ(´ڡ`ლ)ﾞ");
+        SpringApplication.run(OrderApplication.class, args);
+        System.out.println("Order启动成功！");
     }
+
+
 }
