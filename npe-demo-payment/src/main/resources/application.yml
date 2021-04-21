@@ -28,6 +28,15 @@ eureka:
       defaultZone: http://Eureka7001.com:7001/eureka,http://Eureka7002.com:7002/eureka
       #这里如果不写会报错--》是个坑没有提示
 #      defaultZone: http://localhost:7001/eureka
+  instance:
+    #修改主机名称：别名
+    instance-id: payment-8001
+    #显示IP地址
+    prefer-ip-address: true
+    #默认30秒
+    lease-renewal-interval-in-seconds: 2
+    #默认90秒 最后一次等待超时时间
+    lease-expiration-duration-in-seconds: 30
 # 搜索指定包别名
 #  typeAliasesPackage: com.ruoyi.**.domain
 #  # 配置mapper的扫描，找到所有的mapper.xml映射文件

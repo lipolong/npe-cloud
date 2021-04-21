@@ -28,6 +28,12 @@ eureka:
       defaultZone: http://Eureka7001.com:7001/eureka,http://Eureka7002.com:7002/eureka
       #这里如果不写会报错--》是个坑没有提示
 #      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: peyment-8002
+
+      #显示IP地址
+      #默认30秒
+      #默认90秒 最后一次等待超时时间
 # 搜索指定包别名
 #  typeAliasesPackage: com.ruoyi.**.domain
 #  # 配置mapper的扫描，找到所有的mapper.xml映射文件
